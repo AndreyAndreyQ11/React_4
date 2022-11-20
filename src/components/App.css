@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-.div {
+/* div {
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -12,15 +12,6 @@
     font-size: 40px;
     color: #010101;
     border: 21px solid rgb(154, 23, 99);
+    border: 1px solid rgb(0, 0, 0);
 
-}
-
-.friends {
-    min-height: 100vh;
-    font-size: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border: 21px solid rgb(52, 221, 18);
-}
+} */
