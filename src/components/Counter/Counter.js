@@ -17,29 +17,17 @@ class Counter extends React.Component {
     //     }
     // }
     state = {
-        value: this.props.startValue,
+        // value: this.props.startValue,
         text_1: " Да ладно!",
         text_2: "кажись выполнелось"
     }
 
-
-    inkrement = (el) => {
-        console.log("увеличить");
-        const { value, text_2 } = this.state;
-
-        this.setState({
-            value: value + 1,
-        }, () => { console.log(text_2); })
-        // this.setState(object => {
-        //     console.log(object);
-        //     return {
-        //         value: object.value + 1,
-        //     }
-        // }, () => { console.log("кажись выполнелось"); })
-
-        // setTimeout(() => {
-        //     console.log(target, 1000);
-        // }, 1000)
+    inkrement = () => {
+        this.props.test(this.props.startValue + 1);
+        // const { value, text_2 } = this.state;
+        // this.setState({
+        //     value: value + 1,
+        // }, () => { console.log(text_2); })
     };
 
     denkrement = () => {
@@ -59,12 +47,12 @@ class Counter extends React.Component {
         return (
             < div className={s.counter} >
                 <Text
-                    stule={s.value}
-                    value={this.state.value}
+                    style={s.value}
+                    value={this.props.startValue}
                     text_1={this.state.text_1}
                 />
                 <Controls
-                    stule={s.controls}
+                    style={s.controls}
                     onInkrement={this.inkrement}
                     onDenkrement={this.denkrement}
                 />
