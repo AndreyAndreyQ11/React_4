@@ -1,0 +1,24 @@
+.counter {
+    border: 5px solid rgb(49, 208, 13);
+    display: inline-block;
+    text-align: center;
+
+
+    width: 200px;
+
+}
+
+.value {
+    display: block;
+    margin: 10px 0 10px 0;
+
+}
+
+.controls {
+    border: 5px solid rgb(13, 216, 248);
+}
+
+.controls button {
+    margin: 10px;
+    width: 50px;
+}

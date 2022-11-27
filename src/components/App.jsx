@@ -3,6 +3,7 @@
 // import Quest_2_v2 from "./Quest_2_v2/Quest_2_v2";
 // import Quest_3 from "./Quest_3/Quest_3";
 import Counter from "./Counter/Counter";
+import Menu from "./Menu/Menu"
 
 import "./App.css";
 // import data from "../data/data";
@@ -12,8 +13,12 @@ import "./App.css";
 export const App = () => {
   return (
     <>
-      <Counter />
-
+      <Counter
+        startValue={10}
+      />
+      <br />
+      <br />
+      <Menu />
       {/* <Quest_3
         id={transactions.map(el => el.id)}
         type={transactions.map(el => el.type)}
