@@ -10,7 +10,7 @@ class Menu extends React.Component {
         text_false: "Скрыть цифры",
     }
 
-    numberContent = 44;
+    numberContent = 23;
 
     hide = () => {
         this.setState(el => ({
